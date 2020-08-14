@@ -1,27 +1,91 @@
 # AI-PROJECT
-Application of convolutional neural network  for identification of flower species
+Application of convolutional neural network  for recognition of flower species
 
-Abstract: Automatic identification and recognition of medicinal plant species in environments such as forests, mountains and dense regions is necessary to know about their existence. In recent years, plant species recognition is carried out based on the shape, geometry and texture of various plant parts such as leaves, stem, flowers etc. Flower based plant species identification systems are widely used. While modern search engines provide methods to visually search for a query image that contains a flower, it lacks in robustness because of the intra-class variation among millions of flower species around the world. Hence in this proposed research work, a Deep learning approach using Convolutional Neural Networks (CNN) is used to recognize flower species with high accuracy. Images of the plant species are acquired using the built-in camera module of a mobile phone. Feature extraction of flower images is performed using a Transfer Learning approach (i.e. extraction of complex features from a pre-trained network). A machine learning classifier such as Logistic Regression or Random Forest is used on top of it to yield a higher accuracy rate. This approach helps in minimizing the hardware requirement needed to perform the computationally intensive task of training a CNN. This method for classification of flowers can be implemented in real-time applications and can be used to help botanists for their research as well as camping enthusiasts.
+1. PROJECT DESCRIPTION
 
-Introduction: Flowers are everywhere around us. They can feed insects, birds, animals and humans. They are also used as medicines for humans and some animals. A good understanding of flowers is essential to help in identifying new or rare species when came across. This will help the medicinal industry to improve. The system proposed in the paper can be used by botanists, campers and doctors alike. This can be extended as an image search solution where photo can be taken as an input instead of text in order to get more information about the subject and search accordingly for best matching results.
-Plant identification is an important task for researchers, students, and practitioners in field of the agriculture, forest, biodiversity protection, and so on. Recently, thanks to advanced research in the computer vision community, a number of works have been dedicated to the automatic plant identification based on images of plant organs (e.g., leaf, leafscan, fruit, stem, entire, stem, flower). Among them flower image plays an important role for the plant identification because its appearances (e.g., color, shape, texture) are highly distinguishing. Appearances of flowers are stable and less invariant with weather conditions, age of plant. 
-Here, we have compared the performance of two different convolutional neural network architectures one of which is a legacy model and the other is the newest benchmark in the world of object detection and recognition. We have presented our findings in a comparison between the apparent performance of the models.
+Artificial intelligence is an approach to make a  computer, a robot,or a product to think how smart human think.AI is a study of how human brain think,learn,decide and work,when it tries to solve problems.And finally,this study outputs intelligent software systems. The aim of AI is to improve computer functions which are related to human knowledge, for example,reasoning, learning,and problem-solving.
+     Automatic identification and recognition of flower species in environments such as forests,mountains and dense regions is necessary to know about their excistance.In recent years,plant species recognition is carried out based on the shape,geometry and texture of various plant parts such as leaves,flowers etc. Flower based plant species identification systems are widely used. While modern search engines provide methods to visually search for a query image that contains a flower, it lacks in robustness because of the intra-class variation among millions of flower species around the world. Hence in this proposed research work, a Deep learning approach using Convolutional Neural Networks (CNN) is used to recognize flower species with high accuracy. Images of the plant species are acquired using the built-in camera module of a mobile phone. Feature extraction of flower images is performed using a Transfer Learning approach (i.e. extraction of complex features from a pre-trained network). A machine learning classifier such as Logistic Regression or Random Forest is used on top of it to yield a higher accuracy rate. 
+      This approach helps in minimizing the hardware requirement needed to perform the computationally intensive task of training a CNN. It is observed that, CNN combined with Transfer Learning approach as feature extractor outperforms all the handcrafted feature extraction methods such as Local Binary Pattern (LBP), Color Channel Statistics, Color Histograms, Haralick Texture, Hu Moments and Zernike Moments. CNN combined with Transfer Learning approach yields impressive Rank-1 accuracies of 73.05%, 93.41% and 90.60% using OverFeat, Inception-v3 and Xception architectures, respectively as Feature Extractors on FLOWERS102 dataset.
+       Flower species recognition based on flower identification remain a challenge in Image processing and Computer Vision community mainly because of their vast existence, complex structure and unpredictable variety of classes in nature. Because of these natural complexities,it is highly undesirable to perform normal segmentation or feature extraction or combining shape,texture and color features which results in moderate accuracy on benchmark datasets.Although some feature extraction techniques combining global and local feature descriptors reaches state of the art accuracy in classifying flowers,still there is a need for a robust and efficient system to automatically identify and recognize flower larger scale in complex environment.
 
-Overview: For a given RGB image of any flower, our goal is to predict the category of the flower in the image. For this, first the image is segmented using a segmentation method [2]. The background will be removed and the image will have only the subject of interest with no background. These segmented images are then given to the CNN as input images for training. Therefore, the proposed method is divided into two main parts; segmentation and fine-tuning the deep convolutional neural network. For fine-tuning the CNN, we have used the ImageNet ILSVRC pre-trained models submitted to the competition.
-Flower images are normally captured on complicated background with the presence of different objects. Even, CNN can be applied directly on these images, in this paper, in order to evaluate the effect of background for flower identification; we deploy some preprocessing techniques on flower images. The results extract only flower regions from a natural image. 
+PURPOSE
 
-Scope: We have  developed  a  deep  learning  network  forclassification of  different  flowers. For  this, we  have  used  VisualGeometry  Group’s  102  category  flower  data-set  having  8189images of  102  categories  from  Oxford University. The method isbasically  divided  in  two  parts  i.e.  Image  segmentation  andclassification.  We  have  compared  two  different  ConvolutionalNeural  Network  architectures  GoogLeNet  and  AlexNet  for  theclassification  purposeThis method for classification of flowers  can  be  implemented  in  real-time  applications  and  can  be  used  to  help  botanists  for  their research as well as camping enthusiasts. 
+   The main purpose of this project is to build a Convolutional neural network and train the network to detect the presence of flower image.
+   
+2. LITERATURE SURVEY
 
-Objectives : The aim of classification is to place the flowers into a hierarchy of ranks or categories such as species, genera, families and so on. In addition to expressing relationship based on common features, classification serves as a filing and information retrieval system and allows easier reference to organisms comprising the filing system i.e. it provides an idea about the sequence of evolution of flowers from simple to more complex and from more primitive to more advanced types.
+2.1 Existing system and Proposed System:
 
-Problem Statement: Flower classification is a challenging task due to the wide range of flower species which have similar shape, appearance or surrounding objects such as leaves and grass. In this paper, we propose a novel two-step deep learning classifier to distinguish flowers of a wide range of species. Firstly, the flower region is automatically segmented to allow localisation of the minimum bounding box around it.
-Unlike simple object classification such as distinguishing cats from dogs, flower recognition and classification are a challenging task due to the wide range of flower classes that share similar features: Several flowers from different types share similar colour, shape and appearance. Furthermore, images of different flowers usually contain similar surrounding objects such as leaves, grass, etc. There are more than 250000 known species of flowering plants classified into about 350 families.
-A wide range of various applications including content-based image retrieval for flower representation and indexing, plants monitoring systems, floriculture industry, live plant identification and educational resources on flower taxonomy depend on successful flower classification. Manual classification is possible but time consuming and tedious to use with a large number of images and potentially erroneous in some flower classes especially when the image background is complex. Thus, robust techniques of flower segmentation, detection and classification have great value.
+	Existing system
+			Flower species recognition based on flower identification remains a challenge in Image processing and Computer Vision community mainly because of their vast existence, complex structure and unpredictable variety of classes in nature.
 
-Literature survey:
-In views of the botanic experts, flower images therefore are most valuable source for the plant identification task. However, to develop an automatic plant identification system based on flower images, the proposing techniques face to many challenges such as large inter-class similarity, but small intra-class similarity, lighting and viewpoint variations, occlusion, clutter, and object deformations [1].
-As the classification of flower species is an important task, it is already in research and many different approaches have been developed. Previously, methods like Deformable Part Models [2], Histogram of Oriented Gradients [3] and Scale invariant feature transform [4] were used for feature extraction, linear classifiers and object detectors [5]. 
-Later the work was focused onsegmentation and classification using manual feature engineering. But nowadays, state-of-art performance is achieved by Convolutional Neural Networks. CNNs have fulfilled the demand of robustness and have removed the need of hand crafted features. They are similar to Artificial Neural networks but does not require feature engineering. Each neuron receives some inputs, performs a dot product and optionally follows it with a non-linear operation. At the last, CNNs also have a loss function which is to be minimized for optimization.For using CNNs, a large amount of data is required for training. 
-We have used the Visual Geometry Group’s 102 category flower data-set used in [6] having 8,189 images spread over 102 categories from Oxford University. We split 15% of the total images for validation set and 15% for test set. Due to the large amount of data needed for CNNs, 8,189 images are not sufficient for training. Hence, we are using pre-trained models which are trained on ILSVRC2012 Dataset and fine-tuning them on the Oxford data-set. This makes the application less computational expensive.
-A novel approach to recognize and identify plants using shape, color and texture features combined with Zernike moments with Radial Basis Probabilistic Neural Networks (RBPNN) was proposed by Kulkarni et al [7]. A flower classification approach based on vocabulary of texture, color and shape features was proposed by Zisserman and tested on 103 classes [8]-[9]. To accurately recognize flowers in images, Salahuddin et al. proposed a segmentation approach that uses color clustering and domain knowledge of flowers [10].
+Proposed System
+	In proposed system it detects the character which is given as input, in whatever style the input text might be .In this project,wedevelop a model for flower recognition. We also present the algorithms for recognizing the characters which is given as the input and give the correct output from the user. In this recognition process there won’t be any wrong recognition of characters. Instead it recognizes the input and gives the correct output from the user, with high accuracy and in a less time while compared to existing system.
+
+2.2 Feasibility Study
+
+	Feasibility study a design stage for a projects that indicates whether a projects can be built with the available resources and knowledge successfully or not. Feasibility study also includes the users who will be benefited by using this project, the estimated cost and the profits that can be obtains by implementing this system, the adaptable changes. The changes in the system should not affect the pre-existing system. The objectives of feasibility study include:
+	The projects must be developed within the estimated cost and within the scheduled time.
+	The project should be able to implement successfully by careful planning.
+	The projects should be adaptable to changes.
+
+
+2.3	Tools and Technologies Used
+
+	CNN
+Convolutional Neural Network (CNN) is a picture acknowledgment and grouping calculation. A run of the mill CNN comprises of mix of convolutional, pooling what’s more, thick layers.
+	OpenCV
+OpenCV (Open Source Computer Vision ) is a library of programming capacities focused on ongoing PC vision .It contains different libraries and act like an Programming interface for PC’s to have a counterfeit vision.
+	Tensor Flow
+Tensor Flow is an open source man-made reasoning library which assists with making neural systems and furthermore can be utilized for Classification, Perception, Discovering and Forecast of information.
+	Python 
+Python is significant level programming language used to create PC applications or web applications. Python permits simple usage of libraries and has straightforward programming sentence structure with superior and productivity.
+	Datasets
+Datasets are assortment of information which the PC uses to prepare and learn the man-made consciousness framework. Datasets contains picture, CSV information, content, sound or logs what’s more, will be put away in Data distribution center or Data Lakes.
+
+2.4	Software and Hardware Requirement
+
+Software Requirements:
+	  Front End: JavaScript
+	  Programming Language: Python
+	  Back End: Python with Tensorflow
+	  Software: Google colaboratory
+Hardware Requirements:
+	  Processor: Core i3, 1GHz
+	  RAM: 1GB or above
+	  Hard Disk: 10GB or above
+
+
+2.5   Functional Requirements
+
+       The system has following functional modules
+1.Collecting dataset.
+2.Building the convolutional neural network.
+3.Training the convolutional neural network.
+4.Classification of images as flower species or not.
+
+2.6 Non-Functional Requirements
+
+•	Performance:
+The  software makes use of advanced techniques for flower image identification,thus yielding the better accurate results.
+•	Accessibility:
+The software can be easily accessible by anyone. It can be made available to anyone who is in need of.
+•	Portability:
+The software is highly portable and can be used on desktop as well as laptop computers.
+•	Reliability:
+The software is very reliable tool for the prediction of flower images prevents possible manual errors and provide high accuracy.
+•	Scalability:
+The software is highly scalable because it is very easy  to add flower images and predict the presence of flower species.
+
+3. SYSTEM DESIGN
+
+3.1 Architecture Design
+
+A system architecture is the conceptual model that defines the behavior, structure, and more views of a system. The  input training dataset  comprises of the dataset given by the user. This training dataset is given as input to the convolutional neural network. The convolutional network consists of many layers. The input passes through all the layers. Once  the training process is done testing dataset is given to the network to perform testing. Finally  the result is predicted whether the tumor is present or not.
+
+3.2 Data Flow Design
+
+A dataflow diagram(DFD) is graphical representation of the “flow” of data through an information system. DFDs can also be for the visualization of data processing.
+                                     DFD provides no information about the timing or ordering of processes, or about whether processes will operate in sequence or in parallel. Initially, data is pre-processed and then feature extraction is applied. The output from the feature extraction is then given to the classifier for classification. The input image to be checked for abnormalities is then pre-processed and result is input to the prediction process which compares the image with the results obtained after classification.
+
 
