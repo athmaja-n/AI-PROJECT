@@ -25,6 +25,7 @@ In proposed system it detects the character which is given as input, in whatever
 
 Feasibility study a design stage for a projects that indicates whether a projects can be built with the available resources and knowledge successfully or not. Feasibility study also includes the users who will be benefited by using this project, the estimated cost and the profits that can be obtains by implementing this system, the adaptable changes. The changes in the system should not affect the pre-existing system.
 The objectives of feasibility study include:
+
 	The projects must be developed within the estimated cost and within the scheduled time.
 
 	The project should be able to implement successfully by careful planning.
@@ -35,18 +36,23 @@ The objectives of feasibility study include:
 2.3	Tools and Technologies Used:
 
 	CNN
+
 Convolutional Neural Network (CNN) is a picture acknowledgment and grouping calculation. A run of the mill CNN comprises of mix of convolutional, pooling what’s more, thick layers.
 
 	OpenCV
+
 OpenCV (Open Source Computer Vision ) is a library of programming capacities focused on ongoing PC vision .It contains different libraries and act like an Programming interface for PC’s to have a counterfeit vision.
 
 	Tensor Flow
+
 Tensor Flow is an open source man-made reasoning library which assists with making neural systems and furthermore can be utilized for Classification, Perception, Discovering and Forecast of information.
 
 	Python 
+
 Python is significant level programming language used to create PC applications or web applications. Python permits simple usage of libraries and has straightforward programming sentence structure with superior and productivity.
 
 	Datasets
+
 Datasets are assortment of information which the PC uses to prepare and learn the man-made consciousness framework. Datasets contains picture, CSV information, content, sound or logs what’s more, will be put away in Data distribution center or Data Lakes.
 
 2.4	Software and Hardware Requirement
