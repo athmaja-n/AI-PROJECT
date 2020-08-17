@@ -1,6 +1,7 @@
 # AI-PROJECT
 RECOGNITION  OF FLOWER SPECIES
 
+1.PROJECT DESCRIPTION
 
 Artificial intelligence is an approach to make a  computer, a robot,or a product to think how smart human think.AI is a study of how human brain think,learn,decide and work,when it tries to solve problems.And finally,this study outputs intelligent software systems. The aim of AI is to improve computer functions which are related to human knowledge, for example,reasoning, learning,and problem-solving.
 
@@ -67,6 +68,58 @@ Hardware Requirements:
 	  RAM: 1GB or above
 
 	  Hard Disk: 10GB or above
+
+3.REQUIREMENTS
+
+3.2.Functional Requirements:
+
+The system has following functional modules:
+
+1.Collecting dataset.
+
+2.Building the convolutional neural network.
+
+3.Training the convolutional neural network.
+
+4.Classification of images as flower species or not.
+
+3.3 Non-Functional Requirements:
+
+•	Performance:
+
+The  software makes use of advanced techniques for flower image identification,thus yielding the better accurate results.
+
+•	Accessibility:
+
+The software can be easily accessible by anyone. It can be made available to anyone who is in need of.
+
+•	Portability:
+
+The software is highly portable and can be used on desktop as well as laptop computers.
+
+•	Reliability:
+
+The software is very reliable tool for the prediction of flower images prevents possible manual errors and provide high accuracy.
+
+•	Scalability:
+
+The software is highly scalable because it is very easy  to add flower images and predict the presence of flower species.
+
+4.SYSTEM DESIGN
+
+4.1 Architecture Design
+
+A system architecture is the conceptual model that defines the behavior, structure, and more views of a system. The  input training dataset  comprises of the dataset given by the user. This training dataset is given as input to the convolutional neural network. The convolutional network consists of many layers. The input passes through all the layers. Once  the training process is done testing dataset is given to the network to perform testing. Finally  the result is predicted whether the tumor is present or not.
+
+4.2 Data Flow Design
+
+A dataflow diagram(DFD) is graphical representation of the “flow” of data through an information system. DFDs can also be for the visualization of data processing.
+DFD provides no information about the timing or ordering of processes, or about whether processes will operate in sequence or in parallel. Initially, data is pre-processed and then feature extraction is applied. The output from the feature extraction is then given to the classifier for classification. The input image to be checked for abnormalities is then pre-processed and result is input to the prediction process which compares the image with the results obtained after classification.
+
+
+ 
+
+
 
 
 
